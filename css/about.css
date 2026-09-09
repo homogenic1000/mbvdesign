@@ -1,0 +1,37 @@
+/* About Section Styles - MBV Design Portfolio */
+.about {
+  padding: 14vh 4vw;
+  max-width: 900px;
+}
+
+.about-label {
+  font-size: 11px;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+}
+
+.about-text {
+  font-size: clamp(1.15rem, 2vw, 1.7rem);
+  line-height: 1.45;
+  letter-spacing: -.01em;
+  text-wrap: pretty;
+}
+
+.about-skills {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 12px;
+  margin-top: 36px;
+}
+
+.about-skill {
+  border: 1px solid #222;
+  padding: 8px 14px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #8a8a8a;
+}

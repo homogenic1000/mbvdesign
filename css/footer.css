@@ -1,0 +1,55 @@
+/* Footer Styles - MBV Design Portfolio */
+.footer {
+  padding: 14vh 4vw 60px;
+  text-align: center;
+  border-top: 1px solid #222;
+}
+
+.footer-tagline {
+  font-size: clamp(1.1rem, 2vw, 1.5rem);
+  color: #8a8a8a;
+}
+
+.footer-email {
+  font-size: clamp(1.6rem, 9vw, 7rem);
+  font-weight: 900;
+  display: block;
+  margin: 40px 0;
+  letter-spacing: -.03em;
+  word-break: break-word;
+  transition: opacity .3s ease;
+}
+
+.footer-email:hover {
+  opacity: 0.55;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 40px 0 60px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.footer-link {
+  color: #666;
+}
+
+.footer-link:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  color: #666;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
