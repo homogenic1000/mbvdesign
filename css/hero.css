@@ -1,0 +1,195 @@
+/* Hero Section Styles - MBV Design Portfolio */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 120px 4vw 96px;
+  position: relative;
+}
+
+.hero-content {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(240px, 30vw);
+  gap: 5vw;
+  align-items: center;
+  margin-top: -6vh;
+}
+
+.hero-text {
+  animation: fadeUp 1s cubic-bezier(.16, 1, .3, 1) both;
+}
+
+.hero-meta {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 0 4px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #666;
+}
+
+.hero-intro {
+  font-size: clamp(1rem, 1.7vw, 1.35rem);
+  color: #8a8a8a;
+  letter-spacing: -.01em;
+  margin: 0 0 18px 4px;
+}
+
+.hero-intro strong {
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+}
+
+.hero-title {
+  font-size: clamp(3rem, 10.5vw, 13rem);
+  line-height: .82;
+  font-weight: 900;
+  letter-spacing: -.05em;
+}
+
+.hero-aside {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  animation: fadeUp 1s .2s cubic-bezier(.16, 1, .3, 1) both;
+}
+
+.timeline-widget {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4/5;
+  border: 1px solid #222;
+  background: linear-gradient(#0e0e0e, #0a0a0a);
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.timeline-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #4a4a4a;
+}
+
+.timeline-tracks {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.timeline-track {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.timeline-track-fill {
+  height: 10px;
+  background: rgba(255, 255, 255, .85);
+}
+
+.timeline-track-empty {
+  height: 10px;
+  flex: 1;
+  background: rgba(255, 255, 255, .05);
+}
+
+.timeline-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #4a4a4a;
+}
+
+.timeline-playhead {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: rgba(255, 255, 255, .6);
+  animation: playhead 9s linear infinite;
+}
+
+.timecode-display {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #666;
+}
+
+.timecode-value {
+  font-variant-numeric: tabular-nums;
+}
+
+.hero-categories {
+  margin-top: 6vh;
+  padding-top: 22px;
+  border-top: 1px solid #222;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 18px 24px;
+  animation: fadeUp 1s .35s cubic-bezier(.16, 1, .3, 1) both;
+}
+
+.hero-category-link {
+  display: flex;
+  gap: 10px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #8a8a8a;
+}
+
+.hero-category-number {
+  color: #4a4a4a;
+}
+
+.hero-scroll-button {
+  position: absolute;
+  bottom: 36px;
+  left: 4vw;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: none;
+  border: 0;
+  padding: 0;
+  color: #666;
+  font: inherit;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: color .3s ease;
+}
+
+.hero-scroll-button:hover {
+  color: #ffffff;
+}
+
+.hero-scroll-icon {
+  flex: none;
+  width: 28px;
+  height: 28px;
+  border: 1px solid #333;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  line-height: 1;
+  animation: bob 2.2s ease-in-out infinite;
+}
