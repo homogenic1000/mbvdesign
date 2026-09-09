@@ -1,0 +1,161 @@
+/* Project Sections Styles - MBV Design Portfolio */
+.projects-container {
+  padding: 0 4vw;
+}
+
+.project-section {
+  padding: 100px 0;
+  border-top: 1px solid #222;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: #666;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.project-video-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.project-video-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 45vh;
+  aspect-ratio: 9/16;
+  background: #111;
+  overflow: hidden;
+}
+
+.project-video-placeholder {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #3a3a3a;
+}
+
+.project-video-iframe {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+.project-image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.project-image-card {
+  position: relative;
+  aspect-ratio: 4/5;
+  background: #111;
+  overflow: hidden;
+}
+
+.project-image-placeholder {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #3a3a3a;
+}
+
+.project-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform .6s cubic-bezier(.16, 1, .3, 1);
+}
+
+.project-image:hover {
+  transform: scale(1.03);
+}
+
+.project-info {
+  margin-top: 40px;
+  max-width: 650px;
+}
+
+.project-title {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.project-description {
+  font-size: 16px;
+  color: #8a8a8a;
+  line-height: 1.65;
+  text-wrap: pretty;
+}
+
+.project-video-embed {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  background: #000;
+}
+
+.project-video-embed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.project-next-button {
+  margin-top: 44px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: none;
+  border: 0;
+  padding: 0;
+  color: #666;
+  font: inherit;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: color .3s ease;
+}
+
+.project-next-button:hover {
+  color: #ffffff;
+}
+
+.project-next-icon {
+  flex: none;
+  width: 28px;
+  height: 28px;
+  border: 1px solid #333;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  line-height: 1;
+  animation: bob 2.2s ease-in-out infinite;
+}
